@@ -1,0 +1,336 @@
+<html>
+<head>
+<title>Docs For Class ResponseCore</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">default</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+        
+                                    
+                              		  [ <a href="../classtrees_default.html" class="menu">class tree: default</a> ]
+		  [ <a href="../elementindex_default.html" class="menu">index: default</a> ]
+		  	    [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+      <b>Packages:</b><br />
+              <a href="../li_default.html">default</a><br />
+            <br /><br />
+                        <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../default/_handler---AliyunHandler.php.html">		AliyunHandler.php
+		</a><br>
+			<a href="../default/_logger---hook---Auth.php.html">		Auth.php
+		</a><br>
+			<a href="../default/_logger---Config.php.html">		Config.php
+		</a><br>
+			<a href="../default/_config---Config.php.html">		Config.php
+		</a><br>
+			<a href="../default/_demo---demo.php.html">		demo.php
+		</a><br>
+			<a href="../default/_logger---Function.php.html">		Function.php
+		</a><br>
+			<a href="../default/_common---Function.php.html">		Function.php
+		</a><br>
+			<a href="../default/_logger---Handler.php.html">		Handler.php
+		</a><br>
+			<a href="../default/_logger---Hook.php.html">		Hook.php
+		</a><br>
+			<a href="../default/_logger---crypt---ICrypt.php.html">		ICrypt.php
+		</a><br>
+			<a href="../default/_logger---hook---IHook.php.html">		IHook.php
+		</a><br>
+			<a href="../default/_logger---crypt---LHmacSha1.php.html">		LHmacSha1.php
+		</a><br>
+			<a href="../default/_logger---Logger.php.html">		Logger.php
+		</a><br>
+			<a href="../default/_demo---Logger.php.html">		Logger.php
+		</a><br>
+			<a href="../default/_lib---Msg.php.html">		Msg.php
+		</a><br>
+			<a href="../default/_logger---Redis.php.html">		Redis.php
+		</a><br>
+			<a href="../default/_servers.php.html">		servers.php
+		</a><br>
+	  </div><br />
+      
+            <b>Interfaces:</b><br />
+        <div class="package">
+		    		<a href="../default/ICrypt.html">ICrypt</a><br />
+	    		<a href="../default/IHook.html">IHook</a><br />
+	  </div>
+      
+            <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../default/AliyunHandler.html">AliyunHandler</a><br />
+	    		<a href="../default/Auth.html">Auth</a><br />
+	    		<a href="../default/Handler.html">Handler</a><br />
+	    		<a href="../default/Hook.html">Hook</a><br />
+	    		<a href="../default/LHmacSha1.html">LHmacSha1</a><br />
+	    		<a href="../default/Logger.html">Logger</a><br />
+	    		<a href="../default/Msg.html">Msg</a><br />
+	    		<a href="../default/Redis.html">Redis</a><br />
+	    		<a href="../default/RequestCore.html">RequestCore</a><br />
+	    		<a href="../default/RequestCore_Exception.html">RequestCore_Exception</a><br />
+	    		<a href="../default/ResponseCore.html">ResponseCore</a><br />
+	  </div>
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: ResponseCore</h1>
+Source Location: /demo/Logger.php<br /><br />
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Class Overview</a></h3>
+<pre></pre><br />
+<div class="description">Container for all response-related methods.</div><br /><br />
+
+
+
+
+
+
+        
+</td>
+
+<td valign="top">
+<h3><a href="#class_vars">Variables</a></h3>
+<ul>
+    <li><a href="../default/ResponseCore.html#var$body">$body</a></li>
+    <li><a href="../default/ResponseCore.html#var$header">$header</a></li>
+    <li><a href="../default/ResponseCore.html#var$status">$status</a></li>
+  </ul>
+</td>
+
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../default/ResponseCore.html#method__construct">__construct</a></li>
+    <li><a href="../default/ResponseCore.html#methodisOK">isOK</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+
+
+
+
+</tr></table>
+<hr />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line 1076]<br />
+Container for all response-related methods.<br /><br /></div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+<hr />
+<a name="class_vars"></a>
+<h3>Class Variables</h3>
+<div class="tags">
+	<a name="var$body"></a>
+	<p></p>
+	<h4>$body = <span class="value"></span></h4>
+	<p>[line 1086]</p>
+  Stores the SimpleXML response.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$header"></a>
+	<p></p>
+	<h4>$header = <span class="value"></span></h4>
+	<p>[line 1081]</p>
+  Stores the HTTP header information.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$status"></a>
+	<p></p>
+	<h4>$status = <span class="value"></span></h4>
+	<p>[line 1091]</p>
+  Stores the HTTP response code.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+</div><br />
+
+<hr />
+<a name="class_methods"></a>
+<h3>Class Methods</h3>
+<div class="tags">
+
+  <hr />
+	<a name="method__construct"></a>
+	<h3>constructor __construct <span class="smalllinenumber">[line 1101]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>object Contains __construct(
+array
+$header, string
+$body, [integer
+$status = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Constructs a new instance of this class.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>an &lt;php:array&gt; `header` property (HTTP headers as an associative array), a &lt;php:SimpleXMLElement&gt; or &lt;php:string&gt; `body` property, and an &lt;php:integer&gt; `status` code.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$header</b>&nbsp;&nbsp;</td>
+        <td>(Required) Associative array of HTTP headers (typically returned by &lt;RequestCore::get_response_header()&gt;).</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$body</b>&nbsp;&nbsp;</td>
+        <td>(Required) XML-formatted response from AWS.</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$status</b>&nbsp;&nbsp;</td>
+        <td>(Optional) HTTP response status code from the request.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodisOK"></a>
+	<h3>method isOK <span class="smalllinenumber">[line 1116]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean isOK(
+[integer|array
+$codes = array(200, 201, 204, 206)])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Did we receive the status code we expected?<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>Whether we received the expected status code or not.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer|array&nbsp;&nbsp;</td>
+        <td><b>$codes</b>&nbsp;&nbsp;</td>
+        <td>(Optional) The status code(s) to expect. Pass an &lt;php:integer&gt; for a single acceptable value, or an &lt;php:array&gt; of integers for multiple acceptable values.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+</div><br />
+
+
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Fri, 25 May 2018 08:08:10 +0200 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

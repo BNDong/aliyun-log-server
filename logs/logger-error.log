@@ -1,0 +1,3 @@
+[Tue May 22 11:06:29.636038 2018] [access_compat:error] [pid 3268:tid 1908] [client ::1:59386] AH01797: client denied by server configuration: D:/wamp/www/hxai/logger/doc
+[Tue May 22 11:07:11.165349 2018] [access_compat:error] [pid 3268:tid 1908] [client ::1:59403] AH01797: client denied by server configuration: D:/wamp/www/hxai/logger/doc/default/_logger---Logger.php.html, referer: http://localhost:1001/doc/default/_logger---Hook.php.html
+[Thu May 24 10:17:10.842915 2018] [access_compat:error] [pid 10348:tid 1888] [client ::1:57419] AH01797: client denied by server configuration: D:/wamp/www/hxai/logger/logger

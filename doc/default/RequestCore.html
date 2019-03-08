@@ -1,0 +1,2138 @@
+<html>
+<head>
+<title>Docs For Class RequestCore</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">default</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+        
+                                    
+                              		  [ <a href="../classtrees_default.html" class="menu">class tree: default</a> ]
+		  [ <a href="../elementindex_default.html" class="menu">index: default</a> ]
+		  	    [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+      <b>Packages:</b><br />
+              <a href="../li_default.html">default</a><br />
+            <br /><br />
+                        <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../default/_handler---AliyunHandler.php.html">		AliyunHandler.php
+		</a><br>
+			<a href="../default/_logger---hook---Auth.php.html">		Auth.php
+		</a><br>
+			<a href="../default/_logger---Config.php.html">		Config.php
+		</a><br>
+			<a href="../default/_config---Config.php.html">		Config.php
+		</a><br>
+			<a href="../default/_demo---demo.php.html">		demo.php
+		</a><br>
+			<a href="../default/_logger---Function.php.html">		Function.php
+		</a><br>
+			<a href="../default/_common---Function.php.html">		Function.php
+		</a><br>
+			<a href="../default/_logger---Handler.php.html">		Handler.php
+		</a><br>
+			<a href="../default/_logger---Hook.php.html">		Hook.php
+		</a><br>
+			<a href="../default/_logger---crypt---ICrypt.php.html">		ICrypt.php
+		</a><br>
+			<a href="../default/_logger---hook---IHook.php.html">		IHook.php
+		</a><br>
+			<a href="../default/_logger---crypt---LHmacSha1.php.html">		LHmacSha1.php
+		</a><br>
+			<a href="../default/_logger---Logger.php.html">		Logger.php
+		</a><br>
+			<a href="../default/_demo---Logger.php.html">		Logger.php
+		</a><br>
+			<a href="../default/_lib---Msg.php.html">		Msg.php
+		</a><br>
+			<a href="../default/_logger---Redis.php.html">		Redis.php
+		</a><br>
+			<a href="../default/_servers.php.html">		servers.php
+		</a><br>
+	  </div><br />
+      
+            <b>Interfaces:</b><br />
+        <div class="package">
+		    		<a href="../default/ICrypt.html">ICrypt</a><br />
+	    		<a href="../default/IHook.html">IHook</a><br />
+	  </div>
+      
+            <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../default/AliyunHandler.html">AliyunHandler</a><br />
+	    		<a href="../default/Auth.html">Auth</a><br />
+	    		<a href="../default/Handler.html">Handler</a><br />
+	    		<a href="../default/Hook.html">Hook</a><br />
+	    		<a href="../default/LHmacSha1.html">LHmacSha1</a><br />
+	    		<a href="../default/Logger.html">Logger</a><br />
+	    		<a href="../default/Msg.html">Msg</a><br />
+	    		<a href="../default/Redis.html">Redis</a><br />
+	    		<a href="../default/RequestCore.html">RequestCore</a><br />
+	    		<a href="../default/RequestCore_Exception.html">RequestCore_Exception</a><br />
+	    		<a href="../default/ResponseCore.html">ResponseCore</a><br />
+	  </div>
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: RequestCore</h1>
+Source Location: /demo/Logger.php<br /><br />
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Class Overview</a></h3>
+<pre></pre><br />
+<div class="description">Handles all HTTP requests using cURL and manages the responses.</div><br /><br />
+<h4>Author(s):</h4>
+<ul>
+                                      </ul>
+
+
+
+
+    
+          
+        
+        
+        
+      
+<h4>Version:</h4>
+<ul>
+  <li>2011.06.07</li>
+</ul>
+
+<h4>Copyright:</h4>
+<ul>
+  <li>2008-2011 Contributors</li>
+</ul>
+        
+</td>
+
+<td valign="top">
+<h3><a href="#class_vars">Variables</a></h3>
+<ul>
+    <li><a href="../default/RequestCore.html#var$cacert_location">$cacert_location</a></li>
+    <li><a href="../default/RequestCore.html#var$curlopts">$curlopts</a></li>
+    <li><a href="../default/RequestCore.html#var$curl_handle">$curl_handle</a></li>
+    <li><a href="../default/RequestCore.html#var$debug_mode">$debug_mode</a></li>
+    <li><a href="../default/RequestCore.html#var$method">$method</a></li>
+    <li><a href="../default/RequestCore.html#var$password">$password</a></li>
+    <li><a href="../default/RequestCore.html#var$proxy">$proxy</a></li>
+    <li><a href="../default/RequestCore.html#var$read_file">$read_file</a></li>
+    <li><a href="../default/RequestCore.html#var$read_stream">$read_stream</a></li>
+    <li><a href="../default/RequestCore.html#var$read_stream_read">$read_stream_read</a></li>
+    <li><a href="../default/RequestCore.html#var$read_stream_size">$read_stream_size</a></li>
+    <li><a href="../default/RequestCore.html#var$registered_streaming_read_callback">$registered_streaming_read_callback</a></li>
+    <li><a href="../default/RequestCore.html#var$registered_streaming_write_callback">$registered_streaming_write_callback</a></li>
+    <li><a href="../default/RequestCore.html#var$request_body">$request_body</a></li>
+    <li><a href="../default/RequestCore.html#var$request_class">$request_class</a></li>
+    <li><a href="../default/RequestCore.html#var$request_headers">$request_headers</a></li>
+    <li><a href="../default/RequestCore.html#var$request_url">$request_url</a></li>
+    <li><a href="../default/RequestCore.html#var$response">$response</a></li>
+    <li><a href="../default/RequestCore.html#var$response_body">$response_body</a></li>
+    <li><a href="../default/RequestCore.html#var$response_class">$response_class</a></li>
+    <li><a href="../default/RequestCore.html#var$response_code">$response_code</a></li>
+    <li><a href="../default/RequestCore.html#var$response_headers">$response_headers</a></li>
+    <li><a href="../default/RequestCore.html#var$response_info">$response_info</a></li>
+    <li><a href="../default/RequestCore.html#var$seek_position">$seek_position</a></li>
+    <li><a href="../default/RequestCore.html#var$ssl_verification">$ssl_verification</a></li>
+    <li><a href="../default/RequestCore.html#var$useragent">$useragent</a></li>
+    <li><a href="../default/RequestCore.html#var$username">$username</a></li>
+    <li><a href="../default/RequestCore.html#var$write_file">$write_file</a></li>
+    <li><a href="../default/RequestCore.html#var$write_stream">$write_stream</a></li>
+  </ul>
+</td>
+
+<td valign="top">
+<h3><a href="#class_consts">Constants</a></h3>
+<ul>
+    <li><a href="../default/RequestCore.html#constHTTP_DELETE">HTTP_DELETE</a></li>
+    <li><a href="../default/RequestCore.html#constHTTP_GET">HTTP_GET</a></li>
+    <li><a href="../default/RequestCore.html#constHTTP_HEAD">HTTP_HEAD</a></li>
+    <li><a href="../default/RequestCore.html#constHTTP_POST">HTTP_POST</a></li>
+    <li><a href="../default/RequestCore.html#constHTTP_PUT">HTTP_PUT</a></li>
+  </ul>
+</td>
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../default/RequestCore.html#method__construct">__construct</a></li>
+    <li><a href="../default/RequestCore.html#method__destruct">__destruct</a></li>
+    <li><a href="../default/RequestCore.html#methodadd_header">add_header</a></li>
+    <li><a href="../default/RequestCore.html#methodget_response_body">get_response_body</a></li>
+    <li><a href="../default/RequestCore.html#methodget_response_code">get_response_code</a></li>
+    <li><a href="../default/RequestCore.html#methodget_response_header">get_response_header</a></li>
+    <li><a href="../default/RequestCore.html#methodprep_request">prep_request</a></li>
+    <li><a href="../default/RequestCore.html#methodprocess_response">process_response</a></li>
+    <li><a href="../default/RequestCore.html#methodregister_streaming_read_callback">register_streaming_read_callback</a></li>
+    <li><a href="../default/RequestCore.html#methodregister_streaming_write_callback">register_streaming_write_callback</a></li>
+    <li><a href="../default/RequestCore.html#methodremove_header">remove_header</a></li>
+    <li><a href="../default/RequestCore.html#methodsend_multi_request">send_multi_request</a></li>
+    <li><a href="../default/RequestCore.html#methodsend_request">send_request</a></li>
+    <li><a href="../default/RequestCore.html#methodset_body">set_body</a></li>
+    <li><a href="../default/RequestCore.html#methodset_credentials">set_credentials</a></li>
+    <li><a href="../default/RequestCore.html#methodset_curlopts">set_curlopts</a></li>
+    <li><a href="../default/RequestCore.html#methodset_method">set_method</a></li>
+    <li><a href="../default/RequestCore.html#methodset_proxy">set_proxy</a></li>
+    <li><a href="../default/RequestCore.html#methodset_read_file">set_read_file</a></li>
+    <li><a href="../default/RequestCore.html#methodset_read_stream">set_read_stream</a></li>
+    <li><a href="../default/RequestCore.html#methodset_read_stream_size">set_read_stream_size</a></li>
+    <li><a href="../default/RequestCore.html#methodset_request_url">set_request_url</a></li>
+    <li><a href="../default/RequestCore.html#methodset_seek_position">set_seek_position</a></li>
+    <li><a href="../default/RequestCore.html#methodset_useragent">set_useragent</a></li>
+    <li><a href="../default/RequestCore.html#methodset_write_file">set_write_file</a></li>
+    <li><a href="../default/RequestCore.html#methodset_write_stream">set_write_stream</a></li>
+    <li><a href="../default/RequestCore.html#methodstreaming_read_callback">streaming_read_callback</a></li>
+    <li><a href="../default/RequestCore.html#methodstreaming_write_callback">streaming_write_callback</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+
+
+
+
+</tr></table>
+<hr />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line 116]<br />
+Handles all HTTP requests using cURL and manages the responses.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>version:</b>&nbsp;&nbsp;</td><td>2011.06.07</td>
+  </tr>
+  <tr>
+    <td><b>copyright:</b>&nbsp;&nbsp;</td><td>2006-2011 Ryan Parman</td>
+  </tr>
+  <tr>
+    <td><b>copyright:</b>&nbsp;&nbsp;</td><td>2006-2010 Foleeo Inc.</td>
+  </tr>
+  <tr>
+    <td><b>copyright:</b>&nbsp;&nbsp;</td><td>2010-2011 Amazon.com, Inc. or its affiliates.</td>
+  </tr>
+  <tr>
+    <td><b>copyright:</b>&nbsp;&nbsp;</td><td>2008-2011 Contributors</td>
+  </tr>
+  <tr>
+    <td><b>license:</b>&nbsp;&nbsp;</td><td><a href="http://opensource.org/licenses/bsd-license.php">Simplified BSD License</a></td>
+  </tr>
+</table>
+</div>
+</div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+<hr />
+<a name="class_vars"></a>
+<h3>Class Variables</h3>
+<div class="tags">
+	<a name="var$cacert_location"></a>
+	<p></p>
+	<h4>$cacert_location = <span class="value">&nbsp;false</span></h4>
+	<p>[line 246]</p>
+  The location of the cacert.pem file to use.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$curlopts"></a>
+	<p></p>
+	<h4>$curlopts = <span class="value">&nbsp;null</span></h4>
+	<p>[line 186]</p>
+  Custom CURLOPT settings.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$curl_handle"></a>
+	<p></p>
+	<h4>$curl_handle = <span class="value"></span></h4>
+	<p>[line 161]</p>
+  The handle for the cURL object.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$debug_mode"></a>
+	<p></p>
+	<h4>$debug_mode = <span class="value">&nbsp;false</span></h4>
+	<p>[line 191]</p>
+  The state of debug mode.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$method"></a>
+	<p></p>
+	<h4>$method = <span class="value"></span></h4>
+	<p>[line 166]</p>
+  The method by which the request is being made.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$password"></a>
+	<p></p>
+	<h4>$password = <span class="value">&nbsp;null</span></h4>
+	<p>[line 181]</p>
+  The password to use for the request.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$proxy"></a>
+	<p></p>
+	<h4>$proxy = <span class="value">&nbsp;null</span></h4>
+	<p>[line 171]</p>
+  Stores the proxy settings to use for the request.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$read_file"></a>
+	<p></p>
+	<h4>$read_file = <span class="value">&nbsp;null</span></h4>
+	<p>[line 211]</p>
+  File to read from while streaming up.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$read_stream"></a>
+	<p></p>
+	<h4>$read_stream = <span class="value">&nbsp;null</span></h4>
+	<p>[line 216]</p>
+  The resource to read from while streaming up.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$read_stream_read"></a>
+	<p></p>
+	<h4>$read_stream_read = <span class="value">&nbsp;0</span></h4>
+	<p>[line 226]</p>
+  The length already read from the stream.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$read_stream_size"></a>
+	<p></p>
+	<h4>$read_stream_size = <span class="value">&nbsp;null</span></h4>
+	<p>[line 221]</p>
+  The size of the stream to read from.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$registered_streaming_read_callback"></a>
+	<p></p>
+	<h4>$registered_streaming_read_callback = <span class="value">&nbsp;null</span></h4>
+	<p>[line 256]</p>
+  The user-defined callback function to call when a stream is read from.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$registered_streaming_write_callback"></a>
+	<p></p>
+	<h4>$registered_streaming_write_callback = <span class="value">&nbsp;null</span></h4>
+	<p>[line 261]</p>
+  The user-defined callback function to call when a stream is written to.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$request_body"></a>
+	<p></p>
+	<h4>$request_body = <span class="value"></span></h4>
+	<p>[line 131]</p>
+  The body being sent in the request.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$request_class"></a>
+	<p></p>
+	<h4>$request_class = <span class="value">&nbsp;'RequestCore'</span></h4>
+	<p>[line 196]</p>
+  The default class to use for HTTP Requests (defaults to &lt;RequestCore&gt;).<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$request_headers"></a>
+	<p></p>
+	<h4>$request_headers = <span class="value"></span></h4>
+	<p>[line 126]</p>
+  The headers being sent in the request.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$request_url"></a>
+	<p></p>
+	<h4>$request_url = <span class="value"></span></h4>
+	<p>[line 121]</p>
+  The URL being requested.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$response"></a>
+	<p></p>
+	<h4>$response = <span class="value"></span></h4>
+	<p>[line 136]</p>
+  The response returned by the request.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$response_body"></a>
+	<p></p>
+	<h4>$response_body = <span class="value"></span></h4>
+	<p>[line 146]</p>
+  The body returned by the request.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$response_class"></a>
+	<p></p>
+	<h4>$response_class = <span class="value">&nbsp;'ResponseCore'</span></h4>
+	<p>[line 201]</p>
+  The default class to use for HTTP Responses (defaults to &lt;ResponseCore&gt;).<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$response_code"></a>
+	<p></p>
+	<h4>$response_code = <span class="value"></span></h4>
+	<p>[line 151]</p>
+  The HTTP status code returned by the request.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$response_headers"></a>
+	<p></p>
+	<h4>$response_headers = <span class="value"></span></h4>
+	<p>[line 141]</p>
+  The headers returned by the request.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$response_info"></a>
+	<p></p>
+	<h4>$response_info = <span class="value"></span></h4>
+	<p>[line 156]</p>
+  Additional response data.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$seek_position"></a>
+	<p></p>
+	<h4>$seek_position = <span class="value">&nbsp;null</span></h4>
+	<p>[line 241]</p>
+  Stores the intended starting seek position.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$ssl_verification"></a>
+	<p></p>
+	<h4>$ssl_verification = <span class="value">&nbsp;true</span></h4>
+	<p>[line 251]</p>
+  The state of SSL certificate verification.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$useragent"></a>
+	<p></p>
+	<h4>$useragent = <span class="value">&nbsp;'RequestCore/1.4.3'</span></h4>
+	<p>[line 206]</p>
+  Default useragent string to use.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$username"></a>
+	<p></p>
+	<h4>$username = <span class="value">&nbsp;null</span></h4>
+	<p>[line 176]</p>
+  The username to use for the request.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$write_file"></a>
+	<p></p>
+	<h4>$write_file = <span class="value">&nbsp;null</span></h4>
+	<p>[line 231]</p>
+  File to write to while streaming down.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$write_stream"></a>
+	<p></p>
+	<h4>$write_stream = <span class="value">&nbsp;null</span></h4>
+	<p>[line 236]</p>
+  The resource to write to while streaming down.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+</div><br />
+
+<hr />
+<a name="class_methods"></a>
+<h3>Class Methods</h3>
+<div class="tags">
+
+  <hr />
+	<a name="method__construct"></a>
+	<h3>constructor __construct <span class="smalllinenumber">[line 304]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>$this __construct(
+[string
+$url = null], [string
+$proxy = null], [array
+$helpers = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Constructs a new instance of this class.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>A reference to the current instance.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$url</b>&nbsp;&nbsp;</td>
+        <td>(Optional) The URL to request or service endpoint to query.</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$proxy</b>&nbsp;&nbsp;</td>
+        <td>(Optional) The faux-url to use for proxy settings. Takes the following format: `proxy://user:pass@hostname:port`</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$helpers</b>&nbsp;&nbsp;</td>
+        <td>(Optional) An associative array of classnames to use for request, and response functionality. Gets passed in automatically by the calling class.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="method__destruct"></a>
+	<h3>destructor __destruct <span class="smalllinenumber">[line 337]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>$this __destruct(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Destructs the instance. Closes opened file handles.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>A reference to the current instance.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodadd_header"></a>
+	<h3>method add_header <span class="smalllinenumber">[line 377]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>$this add_header(
+string
+$key, mixed
+$value)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Adds a custom HTTP header to the cURL request.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>A reference to the current instance.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$key</b>&nbsp;&nbsp;</td>
+        <td>(Required) The custom HTTP header to set.</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$value</b>&nbsp;&nbsp;</td>
+        <td>(Required) The value to assign to the custom HTTP header.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodget_response_body"></a>
+	<h3>method get_response_body <span class="smalllinenumber">[line 1056]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string get_response_body(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get the HTTP response body from the request.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>The response body.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodget_response_code"></a>
+	<h3>method get_response_code <span class="smalllinenumber">[line 1066]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string get_response_code(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get the HTTP response code from the request.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>The HTTP response code.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodget_response_header"></a>
+	<h3>method get_response_header <span class="smalllinenumber">[line 1042]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string|array get_response_header(
+[string
+$header = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get the HTTP response headers from the request.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>All or selected header values.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$header</b>&nbsp;&nbsp;</td>
+        <td>(Optional) A specific header value to return. Defaults to all headers.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodprep_request"></a>
+	<h3>method prep_request <span class="smalllinenumber">[line 706]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>resource prep_request(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Prepares and adds the details of the cURL request. This can be passed along to a &lt;php:curl_multi_exec()&gt;  function.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>The handle for the cURL object.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodprocess_response"></a>
+	<h3>method process_response <span class="smalllinenumber">[line 865]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code><a href="../default/ResponseCore.html">ResponseCore</a> process_response(
+[resource
+$curl_handle = null], [string
+$response = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Take the post-processed cURL data and break it down into useful header/body/info chunks. Uses the  data stored in the `curl_handle` and `response` properties unless replacement data is passed in via  parameters.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>A &lt;ResponseCore&gt; object containing a parsed HTTP response.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">resource&nbsp;&nbsp;</td>
+        <td><b>$curl_handle</b>&nbsp;&nbsp;</td>
+        <td>(Optional) The reference to the already executed cURL request.</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$response</b>&nbsp;&nbsp;</td>
+        <td>(Optional) The actual response content itself that needs to be parsed.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodregister_streaming_read_callback"></a>
+	<h3>method register_streaming_read_callback <span class="smalllinenumber">[line 591]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>$this register_streaming_read_callback(
+string|array|function
+$callback)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Register a callback function to execute whenever a data stream is read from using  &lt;CFRequest::streaming_read_callback()&gt;.<br /><br /><p>The user-defined callback function should accept three arguments:</p><p><ul><li><ol><li><div class="src-line"><span class="src-var">$curl_handle</span></div></li>
+</ol> - <ol><li><div class="src-line"><span class="src-id">resource</span></div></li>
+</ol> - Required - The cURL handle resource that represents the in-progress transfer.</li><li><ol><li><div class="src-line"><span class="src-var">$file_handle</span></div></li>
+</ol> - <ol><li><div class="src-line"><span class="src-id">resource</span></div></li>
+</ol> - Required - The file handle resource that represents the file on the local file system.</li><li><ol><li><div class="src-line"><span class="src-var">$length</span></div></li>
+</ol> - <ol><li><div class="src-line"><span class="src-id">integer</span></div></li>
+</ol> - Required - The length in kilobytes of the data chunk that was transferred.</li></ul></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>A reference to the current instance.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string|array|function&nbsp;&nbsp;</td>
+        <td><b>$callback</b>&nbsp;&nbsp;</td>
+        <td>(Required) The callback function is called by &lt;php:call_user_func()&gt;, so you can pass the following values: <ul><li>The name of a global function to execute, passed as a string.</li><li>A method to execute, passed as <ol><li><div class="src-line"><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'ClassName'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'MethodName'</span><span class="src-sym">)</span></div></li>
+</ol>.</li><li>An anonymous function (PHP 5.3+).</li></ul></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodregister_streaming_write_callback"></a>
+	<h3>method register_streaming_write_callback <span class="smalllinenumber">[line 615]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>$this register_streaming_write_callback(
+string|array|function
+$callback)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Register a callback function to execute whenever a data stream is written to using  &lt;CFRequest::streaming_write_callback()&gt;.<br /><br /><p>The user-defined callback function should accept two arguments:</p><p><ul><li><ol><li><div class="src-line"><span class="src-var">$curl_handle</span></div></li>
+</ol> - <ol><li><div class="src-line"><span class="src-id">resource</span></div></li>
+</ol> - Required - The cURL handle resource that represents the in-progress transfer.</li><li><ol><li><div class="src-line"><span class="src-var">$length</span></div></li>
+</ol> - <ol><li><div class="src-line"><span class="src-id">integer</span></div></li>
+</ol> - Required - The length in kilobytes of the data chunk that was transferred.</li></ul></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>A reference to the current instance.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string|array|function&nbsp;&nbsp;</td>
+        <td><b>$callback</b>&nbsp;&nbsp;</td>
+        <td>(Required) The callback function is called by &lt;php:call_user_func()&gt;, so you can pass the following values: <ul><li>The name of a global function to execute, passed as a string.</li><li>A method to execute, passed as <ol><li><div class="src-line"><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'ClassName'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'MethodName'</span><span class="src-sym">)</span></div></li>
+</ol>.</li><li>An anonymous function (PHP 5.3+).</li></ul></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodremove_header"></a>
+	<h3>method remove_header <span class="smalllinenumber">[line 389]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>$this remove_header(
+string
+$key)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Removes an HTTP header from the cURL request.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>A reference to the current instance.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$key</b>&nbsp;&nbsp;</td>
+        <td>(Required) The custom HTTP header to set.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsend_multi_request"></a>
+	<h3>method send_multi_request <span class="smalllinenumber">[line 949]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array send_multi_request(
+array
+$handles, [array
+$opt = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sends the request using &lt;php:curl_multi_exec()&gt;, enabling parallel requests. Uses the &quot;rolling&quot; method.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>Post-processed cURL responses.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$handles</b>&nbsp;&nbsp;</td>
+        <td>(Required) An indexed array of cURL handles to process simultaneously.</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$opt</b>&nbsp;&nbsp;</td>
+        <td>(Optional) An associative array of parameters that can have the following keys: <ul><li><ol><li><div class="src-line"><span class="src-id">callback</span></div></li>
+</ol> - <ol><li><div class="src-line"><span class="src-id">string</span>|<span class="src-key">array</span></div></li>
+</ol> - Optional - The string name of a function to pass the response data to. If this is a method, pass an array where the <ol><li><div class="src-line"><span class="src-sym">[</span><span class="src-num">0</span><span class="src-sym">]</span></div></li>
+</ol> index is the class and the <ol><li><div class="src-line"><span class="src-sym">[</span><span class="src-num">1</span><span class="src-sym">]</span></div></li>
+</ol> index is the method name.</li><li><ol><li><div class="src-line"><span class="src-id">limit</span></div></li>
+</ol> - <ol><li><div class="src-line"><span class="src-id">integer</span></div></li>
+</ol> - Optional - The number of simultaneous requests to make. This can be useful for scaling around slow server responses. Defaults to trusting cURLs judgement as to how many to use.</li></ul></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsend_request"></a>
+	<h3>method send_request <span class="smalllinenumber">[line 916]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string send_request(
+[boolean
+$parse = false])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sends the request, calling necessary utility functions to update built-in properties.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>The resulting unparsed data from the request.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">boolean&nbsp;&nbsp;</td>
+        <td><b>$parse</b>&nbsp;&nbsp;</td>
+        <td>(Optional) Whether to parse the response with ResponseCore or not.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodset_body"></a>
+	<h3>method set_body <span class="smalllinenumber">[line 428]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>$this set_body(
+string
+$body)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set the body to send in the request.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>A reference to the current instance.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$body</b>&nbsp;&nbsp;</td>
+        <td>(Required) The textual content to send along in the body of the request.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodset_credentials"></a>
+	<h3>method set_credentials <span class="smalllinenumber">[line 363]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>$this set_credentials(
+string
+$user, string
+$pass)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the credentials to use for authentication.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>A reference to the current instance.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$user</b>&nbsp;&nbsp;</td>
+        <td>(Required) The username to authenticate with.</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$pass</b>&nbsp;&nbsp;</td>
+        <td>(Required) The password to authenticate with.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodset_curlopts"></a>
+	<h3>method set_curlopts <span class="smalllinenumber">[line 453]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>$this set_curlopts(
+array
+$curlopts)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set additional CURLOPT settings. These will merge with the default settings, and override if  there is a duplicate.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>A reference to the current instance.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$curlopts</b>&nbsp;&nbsp;</td>
+        <td>(Optional) A set of key-value pairs that set `CURLOPT` options. These will merge with the existing CURLOPTs, and ones passed here will override the defaults. Keys should be the `CURLOPT_*` constants, not strings.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodset_method"></a>
+	<h3>method set_method <span class="smalllinenumber">[line 404]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>$this set_method(
+string
+$method)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set the method type for the request.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>A reference to the current instance.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$method</b>&nbsp;&nbsp;</td>
+        <td>(Required) One of the following constants: &lt;HTTP_GET&gt;, &lt;HTTP_POST&gt;, &lt;HTTP_PUT&gt;, &lt;HTTP_HEAD&gt;, &lt;HTTP_DELETE&gt;.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodset_proxy"></a>
+	<h3>method set_proxy <span class="smalllinenumber">[line 550]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>$this set_proxy(
+string
+$proxy)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set the proxy to use for making requests.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>A reference to the current instance.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$proxy</b>&nbsp;&nbsp;</td>
+        <td>(Required) The faux-url to use for proxy settings. Takes the following format: `proxy://user:pass@hostname:port`</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodset_read_file"></a>
+	<h3>method set_read_file <span class="smalllinenumber">[line 509]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>$this set_read_file(
+string
+$location)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the file to read from while streaming up.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>A reference to the current instance.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$location</b>&nbsp;&nbsp;</td>
+        <td>(Required) The readable location to read from.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodset_read_stream"></a>
+	<h3>method set_read_stream <span class="smalllinenumber">[line 481]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>$this set_read_stream(
+resource
+$resource, [integer
+$size = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the resource to read from while streaming up. Reads the stream from its current position until  EOF or `$size` bytes have been read. If `$size` is not given it will be determined by &lt;php:fstat()&gt; and  &lt;php:ftell()&gt;.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>A reference to the current instance.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">resource&nbsp;&nbsp;</td>
+        <td><b>$resource</b>&nbsp;&nbsp;</td>
+        <td>(Required) The readable resource to read from.</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$size</b>&nbsp;&nbsp;</td>
+        <td>(Optional) The size of the stream to read.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodset_read_stream_size"></a>
+	<h3>method set_read_stream_size <span class="smalllinenumber">[line 465]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>$this set_read_stream_size(
+integer
+$size)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the length in bytes to read from the stream while streaming up.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>A reference to the current instance.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$size</b>&nbsp;&nbsp;</td>
+        <td>(Required) The length in bytes to read from the stream.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodset_request_url"></a>
+	<h3>method set_request_url <span class="smalllinenumber">[line 440]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>$this set_request_url(
+string
+$url)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set the URL to make the request to.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>A reference to the current instance.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$url</b>&nbsp;&nbsp;</td>
+        <td>(Required) The URL to make the request to.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodset_seek_position"></a>
+	<h3>method set_seek_position <span class="smalllinenumber">[line 566]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>$this set_seek_position(
+integer
+$position)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set the intended starting seek position.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>A reference to the current instance.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$position</b>&nbsp;&nbsp;</td>
+        <td>(Required) The byte-position of the stream to begin reading from.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodset_useragent"></a>
+	<h3>method set_useragent <span class="smalllinenumber">[line 416]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>$this set_useragent(
+string
+$ua)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets a custom useragent string for the class.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>A reference to the current instance.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$ua</b>&nbsp;&nbsp;</td>
+        <td>(Required) The useragent string to use.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodset_write_file"></a>
+	<h3>method set_write_file <span class="smalllinenumber">[line 536]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>$this set_write_file(
+string
+$location)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the file to write to while streaming down.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>A reference to the current instance.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$location</b>&nbsp;&nbsp;</td>
+        <td>(Required) The writeable location to write to.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodset_write_stream"></a>
+	<h3>method set_write_stream <span class="smalllinenumber">[line 523]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>$this set_write_stream(
+resource
+$resource)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the resource to write to while streaming down.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>A reference to the current instance.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">resource&nbsp;&nbsp;</td>
+        <td><b>$resource</b>&nbsp;&nbsp;</td>
+        <td>(Required) The writeable resource to write to.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodstreaming_read_callback"></a>
+	<h3>method streaming_read_callback <span class="smalllinenumber">[line 634]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>binary streaming_read_callback(
+resource
+$curl_handle, resource
+$file_handle, integer
+$length)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		A callback function that is invoked by cURL for streaming up.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>Binary data from a stream.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">resource&nbsp;&nbsp;</td>
+        <td><b>$curl_handle</b>&nbsp;&nbsp;</td>
+        <td>(Required) The cURL handle for the request.</td>
+      </tr>
+          <tr>
+        <td class="type">resource&nbsp;&nbsp;</td>
+        <td><b>$file_handle</b>&nbsp;&nbsp;</td>
+        <td>(Required) The open file handle resource.</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$length</b>&nbsp;&nbsp;</td>
+        <td>(Required) The maximum number of bytes to read.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodstreaming_write_callback"></a>
+	<h3>method streaming_write_callback <span class="smalllinenumber">[line 673]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>integer streaming_write_callback(
+resource
+$curl_handle, binary
+$data)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		A callback function that is invoked by cURL for streaming down.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>The number of bytes written.</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">resource&nbsp;&nbsp;</td>
+        <td><b>$curl_handle</b>&nbsp;&nbsp;</td>
+        <td>(Required) The cURL handle for the request.</td>
+      </tr>
+          <tr>
+        <td class="type">binary&nbsp;&nbsp;</td>
+        <td><b>$data</b>&nbsp;&nbsp;</td>
+        <td>(Required) The data to write.</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+</div><br />
+
+<hr />
+<a name="class_consts"></a>
+<h3>Class Constants</h3>
+<div class="tags">
+	<a name="constHTTP_DELETE"></a>
+	<p></p>
+	<h4>HTTP_DELETE = <span class="value">&nbsp;'DELETE'</span></h4>
+	<p>[line 285]</p>
+  DELETE HTTP Method<br /><br />
+  <br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="constHTTP_GET"></a>
+	<p></p>
+	<h4>HTTP_GET = <span class="value">&nbsp;'GET'</span></h4>
+	<p>[line 270]</p>
+  GET HTTP Method<br /><br />
+  <br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="constHTTP_HEAD"></a>
+	<p></p>
+	<h4>HTTP_HEAD = <span class="value">&nbsp;'HEAD'</span></h4>
+	<p>[line 290]</p>
+  HEAD HTTP Method<br /><br />
+  <br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="constHTTP_POST"></a>
+	<p></p>
+	<h4>HTTP_POST = <span class="value">&nbsp;'POST'</span></h4>
+	<p>[line 275]</p>
+  POST HTTP Method<br /><br />
+  <br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="constHTTP_PUT"></a>
+	<p></p>
+	<h4>HTTP_PUT = <span class="value">&nbsp;'PUT'</span></h4>
+	<p>[line 280]</p>
+  PUT HTTP Method<br /><br />
+  <br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+</div><br />
+
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Fri, 25 May 2018 08:08:10 +0200 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

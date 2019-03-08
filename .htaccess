@@ -1,0 +1,23 @@
+#判断rewrite_module模块是否开启，如果开启执行里面的代码
+
+<IfModule rewrite_module>
+
+       #开启重写机制
+
+       RewriteEngine on
+
+       #条件1：所请求的资源不是文件，这里告诉apache这里是伪静态
+
+       RewriteCond %{REQUEST_FILENAME} !-f
+
+       #条件2：所请求的资源不是目录，这里告诉apache这里是伪静态
+
+       RewriteCond %{REQUEST_FILENAME} !-d
+
+       #定义重写规则，所有的部分重写到servers.php/后边
+
+       #.*就是找到index.php后面的所有参数，将匹配到的所有参数置index.php/后面
+
+       RewriteRule (.*) servers.php/$1
+
+</IfModule>

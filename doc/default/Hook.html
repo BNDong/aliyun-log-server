@@ -1,0 +1,245 @@
+<html>
+<head>
+<title>Docs For Class Hook</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">default</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+        
+                                    
+                              		  [ <a href="../classtrees_default.html" class="menu">class tree: default</a> ]
+		  [ <a href="../elementindex_default.html" class="menu">index: default</a> ]
+		  	    [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+      <b>Packages:</b><br />
+              <a href="../li_default.html">default</a><br />
+            <br /><br />
+                        <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../default/_handler---AliyunHandler.php.html">		AliyunHandler.php
+		</a><br>
+			<a href="../default/_logger---hook---Auth.php.html">		Auth.php
+		</a><br>
+			<a href="../default/_logger---Config.php.html">		Config.php
+		</a><br>
+			<a href="../default/_config---Config.php.html">		Config.php
+		</a><br>
+			<a href="../default/_logger---Function.php.html">		Function.php
+		</a><br>
+			<a href="../default/_common---Function.php.html">		Function.php
+		</a><br>
+			<a href="../default/_logger---Handler.php.html">		Handler.php
+		</a><br>
+			<a href="../default/_logger---Hook.php.html">		Hook.php
+		</a><br>
+			<a href="../default/_logger---crypt---ICrypt.php.html">		ICrypt.php
+		</a><br>
+			<a href="../default/_logger---hook---IHook.php.html">		IHook.php
+		</a><br>
+			<a href="../default/_logger---crypt---LHmacSha1.php.html">		LHmacSha1.php
+		</a><br>
+			<a href="../default/_logger---Logger.php.html">		Logger.php
+		</a><br>
+			<a href="../default/_lib---Msg.php.html">		Msg.php
+		</a><br>
+			<a href="../default/_logger---Redis.php.html">		Redis.php
+		</a><br>
+			<a href="../default/_servers.php.html">		servers.php
+		</a><br>
+	  </div><br />
+      
+            <b>Interfaces:</b><br />
+        <div class="package">
+		    		<a href="../default/ICrypt.html">ICrypt</a><br />
+	    		<a href="../default/IHook.html">IHook</a><br />
+	  </div>
+      
+            <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../default/AliyunHandler.html">AliyunHandler</a><br />
+	    		<a href="../default/Auth.html">Auth</a><br />
+	    		<a href="../default/AuthException.html">AuthException</a><br />
+	    		<a href="../default/Handler.html">Handler</a><br />
+	    		<a href="../default/Hook.html">Hook</a><br />
+	    		<a href="../default/LHmacSha1.html">LHmacSha1</a><br />
+	    		<a href="../default/Logger.html">Logger</a><br />
+	    		<a href="../default/Msg.html">Msg</a><br />
+	    		<a href="../default/Redis.html">Redis</a><br />
+	  </div>
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: Hook</h1>
+Source Location: /logger/Hook.php<br /><br />
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Class Overview</a></h3>
+<pre></pre><br />
+<div class="description">系统钩子</div><br /><br />
+
+
+
+
+
+
+        
+</td>
+
+
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../default/Hook.html#methodaddHook">addHook</a></li>
+    <li><a href="../default/Hook.html#methodrun">run</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+
+
+
+
+</tr></table>
+<hr />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line 12]<br />
+系统钩子<br /><br /><p>User: dbn  Date: 2018/5/21  Time: 11:49</p><br /></div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+
+<hr />
+<a name="class_methods"></a>
+<h3>Class Methods</h3>
+<div class="tags">
+  <hr />
+	<a name="methodaddHook"></a>
+	<h3>static method addHook <span class="smalllinenumber">[line 31]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>static void addHook(
+string
+$group, <a href="../default/IHook.html">IHook</a>
+$hook, [array
+$params = array()])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		添加hook<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>dbn</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$group</b>&nbsp;&nbsp;</td>
+        <td>hook所属组</td>
+      </tr>
+          <tr>
+        <td class="type"><a href="../default/IHook.html">IHook</a>&nbsp;&nbsp;</td>
+        <td><b>$hook</b>&nbsp;&nbsp;</td>
+        <td>钩子对象</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$params</b>&nbsp;&nbsp;</td>
+        <td>参数数组</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodrun"></a>
+	<h3>static method run <span class="smalllinenumber">[line 46]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>static void run(
+string/array
+$group)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		运行指定钩子组<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>dbn</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string/array&nbsp;&nbsp;</td>
+        <td><b>$group</b>&nbsp;&nbsp;</td>
+        <td>hook所属组，可传递单个组名或者以数组的方式传递多个组名</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+
+</div><br />
+
+
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Wed, 30 May 2018 09:22:41 +0200 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.4</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
