@@ -2,6 +2,10 @@
 🐟 aliyun log processing server.
 <br>日志处理服务端，对接阿里云日志服务。
 
+```php
+LogCenter::getInstance()->debug("日志信息", ["name"=>"BNDong"]);
+```
+
 # repository tree
 
 ```
@@ -49,6 +53,15 @@
 * 获取单个分区的日志数据
 * 写入日志
 
+# log level
+
+|level        |code        |
+|:-----------:|:----------:|
+|**debug**    |100|
+|**info**     |200|
+|**warn**     |300|
+|**error**    |400|
+|**fatal**    |500|
 
 # log format
 
